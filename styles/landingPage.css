@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-image: url("../asserts/images/landingPage.png");
+  height: 85vh;
+  position: relative;
+}
+
+.box {
+  height: 85vh; /* this should be from div .main */
+  width: 100%;
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
