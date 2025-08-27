@@ -69,22 +69,16 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* padding: 4px 16px;
-  gap: 10px; */
-
-  width: 77px;
-  height: 32px;
+  border: none;
+  width: 90px;
+  height: 35px;
 
   background: #e50814;
   border-radius: 4px;
 }
 
 .nav-lang-btn {
-  /* Button/Translate/Medium/Default */
-
   box-sizing: border-box;
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,13 +90,59 @@ body {
   height: 32px;
 
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid #545454;
+  border: 2px solid #545454;
   border-radius: 4px;
 
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-hero-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.email-hero-field input {
+  flex: 1;
+  padding: 18px 15px;
+  border: 1px solid #444;
+  border-radius: 2px 0 0 2px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.email-hero-field input::placeholder {
+  color: #b3b3b3;
+  font-size: 16px;
+}
+.email-hero-field button {
+  padding: 18px 25px;
+  background: #e50914;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.email-hero-field button:hover {
+  background: #f6121d;
 }
 
 .hero {
@@ -117,16 +157,20 @@ body {
 }
 .p1 {
   font-family: "Netflix Sans Bold", "Courier New", Courier, monospace;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 .p2 {
   font-family: "Netflix Sans Medium", "Courier New", Courier, monospace;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 .p3 {
   font-family: "Netflix Sans Medium", "Courier New", Courier, monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .corousel-cointainer {
@@ -356,5 +400,6 @@ body {
 }
 
 .footer-country {
+  margin-top: 10px;
   font-size: 13px;
 }
